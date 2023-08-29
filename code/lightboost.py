@@ -120,17 +120,4 @@ plt.tight_layout()
 plt.savefig("lgbm_featureimp.png",dpi=300)
 plt.show()
 
-
-# import xgboost as xgb
-
-# # Assuming you have already trained an XGBoost regressor named 'model'
-# # You can also replace 'model' with your actual XGBoost model instance
-
-# # Specify the index of the tree you want to visualize (e.g., 0 for the first tree)
-# tree_index = 0
-
-# # Visualize the specified tree
-# plt.figure(figsize=(20, 10))  # Adjust the figure size as needed
-# xgb.plot_tree(model, num_trees=tree_index, rankdir='LR',ax=plt.gca())  # 'rankdir' controls the tree orientation (LR for left to right)
-# plt.savefig("lgbm.png", dpi=300)
 # plt.show()
