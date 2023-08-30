@@ -33,7 +33,7 @@ The [_pycache_](/_pycache_) directory stores cached Python files generated durin
 
 ## Licensing
 
-This repository is open-source and is available under the [MIT License](/License/LICENSE.txt). You are free to use, modify, and distribute the code and data within the terms of the license. However, attribution is required when using the code or data (refer to the [License](/License/LICENSE.txt) directory for details).
+This repository is not open-source and is not available under the [MIT License](/License/LICENSE.txt). You are not free to use, modify, and distribute the code and data within the terms of the license. Attribution is required when using the code or data (refer to the [License](/License/LICENSE.txt) directory for details).
 
 If you have any questions, suggestions, or contributions, please feel free to reach out or create a pull request.
 
