@@ -24,12 +24,12 @@ kf = KFold(n_splits=n_splits, shuffle=True, random_state=53)
 xgb = XGBRegressor()
 
 param_grid = {
-    'n_estimators':[200],#[50, 100, 200,300,350],
-    'learning_rate': [0.1],#[0.01, 0.1, 0.2,0.02,0.001],
-    'max_depth': [7],#[3, 4, 5,6,7,8,9],
-    'subsample': [0.6],#[0.9,0.8,0.7,0.6,0.5,0.4,0.3],
-    'colsample_bytree':[0.8],# [0.8,0.7,0.6,0.5,0.4,0.3,0.2],
-    'gamma':[0],#[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8]
+    'n_estimators':[50, 100, 200,300,350],
+    'learning_rate': [0.01, 0.1, 0.2,0.02,0.001],
+    'max_depth': [3, 4, 5,6,7,8,9],
+    'subsample':[0.9,0.8,0.7,0.6,0.5,0.4,0.3],
+    'colsample_bytree':[0.8,0.7,0.6,0.5,0.4,0.3,0.2],
+    'gamma':[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8]
 }
 
 grid_search = GridSearchCV(estimator=xgb, param_grid=param_grid, cv=kf, scoring='neg_mean_squared_error')
