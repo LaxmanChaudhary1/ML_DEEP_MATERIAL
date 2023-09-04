@@ -15,8 +15,7 @@ Created on Sun Aug 20 09:26:38 2023
 """
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
-from matminer.datasets import load_dataset
-data = load_dataset("dielectric_constant")
+data = pd.read_csv("../data/dielectric_materials.csv")
 data["poly_ionic"] =data["poly_total"] - data["poly_electronic"]
 data = data.dropna()  
 data = data.drop(["material_id","formula","structure","cif","meta","poscar","pot_ferroelectric","e_electronic","e_total"],axis=1)
