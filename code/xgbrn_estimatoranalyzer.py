@@ -54,7 +54,3 @@ class XGBn_estimatorAnalyzer:
         plt.ylabel('Negative Mean Squared Error (MSE)')
         plt.title('XGBoost Regressor Performance')
         plt.show()
-
-# if __name__ == '__main__':
-#     X=X_train
-#     y=y_train
