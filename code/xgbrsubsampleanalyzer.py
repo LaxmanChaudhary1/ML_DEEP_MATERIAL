@@ -51,4 +51,3 @@ class XGBRSubsampleAnalyzer:
         plt.ylabel('Negative Mean Squared Error (MSE)')
         plt.title('XGBoost Regressor Performance vs Subsample Ratio')
         plt.show()
-#     y = y_train
