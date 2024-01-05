@@ -54,7 +54,4 @@ class XGBRTreeDepthAnalyzer:
         plt.ylabel('Negative Mean Squared Error (MSE)')
         plt.title('XGBoost Regressor Performance vs Max Tree Depth')
         plt.show()
-
-# if __name__ == '__main__':
-#     X=X_train
 #     y=y_train 
